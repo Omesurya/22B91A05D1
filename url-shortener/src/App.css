@@ -1,0 +1,136 @@
+/* === Global Layout === */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: url("https://www.transparenttextures.com/patterns/cubes.png");
+  background-color: #f9fafc;
+  background-repeat: repeat;
+  min-height: 100vh;
+  color: #333;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 30px;
+  background: linear-gradient(to bottom right, #ffffff, #f3f7fa);
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.05);
+}
+
+/* === Typography & Links === */
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+a {
+  color: #1565c0;
+  font-weight: 500;
+  text-decoration: none;
+  word-break: break-word;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* === Buttons === */
+button,
+.MuiButton-root {
+  border-radius: 6px;
+  padding: 10px 16px;
+  font-size: 14px;
+  text-transform: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.MuiButton-contained {
+  background-color: #1976d2;
+  color: #fff;
+}
+
+.MuiButton-contained:hover {
+  background-color: #1565c0;
+  transform: scale(1.02);
+}
+
+.MuiButton-outlined {
+  border-color: #1976d2;
+  color: #1976d2;
+}
+
+.MuiButton-outlined:hover {
+  background-color: #e3f2fd;
+  transform: scale(1.02);
+}
+
+/* === Cards === */
+.MuiCard-root {
+  transition: transform 0.2s ease-in-out;
+  background: linear-gradient(to top right, #e3f2fd, #ffffff);
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+.MuiCard-root:hover {
+  transform: translateY(-4px);
+}
+
+/* === Table Styling (Stats) === */
+table {
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 15px;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 12px 16px;
+  text-align: left;
+}
+
+th {
+  background-color: #1976d2;
+  color: white;
+  font-weight: bold;
+}
+
+.MuiTableRow-hover:hover {
+  background-color: #f0f6ff !important;
+}
+
+/* === Forms === */
+input, .MuiTextField-root {
+  margin-bottom: 15px;
+  padding: 8px 12px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+/* === Alerts === */
+.MuiAlert-root {
+  border-radius: 8px;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.MuiAlert-standardSuccess {
+  background-color: #e8f5e9;
+  border-left: 4px solid #2e7d32;
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+  .container {
+    margin: 20px;
+    padding: 20px;
+  }
+
+  button,
+  .MuiButton-root {
+    width: 100%;
+  }
+}
